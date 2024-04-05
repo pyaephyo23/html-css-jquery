@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <form action="/index.html">
+        <h1>Contact</h1>
+        <p>
+            <label for="firstName">First Name :</label>
+            <input type="text" name="firstName" id="firstName" required="">
+    
+        </p>
+        <p>
+            <label for="lastName">Last Name :</label>
+            <input type="text" name="lastName" id="lastName" required="">    
+        </p>
+        <p>
+            <label for="phNo">Phone Number :</label>
+            <input type="text" name="phNo" id="phNo" required="">    
+        </p>
+        <p>
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email" required="">    
+        </p>
+        <p>
+            <label for="address">Address :</label>
+            <textarea id="address">
+                
+            </textarea>
+        </p>
+     
+        <p>
+            <h4>Gender</h4>
+            <label for="male">Male:</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">Female:</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="other">Other:</label>
+            <input type="radio" name="gender" id="other" value="other">
+        </p>
+        <p>
+            <h4>Favourite Fruit</h4>
+            <label for="apple">apple</label>
+            <input type="checkbox" name="apple" id="apple" value="apple">
+            <label for="orange">orange</label>
+            <input type="checkbox" name="orange" id="orange" value="orange">
+            <label for="grape">grape</label>
+            <input type="checkbox" name="grape" id="grape" value="grape">
+            <label for="banana">banana</label>
+            <input type="checkbox" name="banana" id="banana" value="banana">
+        </p>
+        <p>
+            <label for="language">Favourite Programming Language</label>
+            <select id="language">
+                <option value="none"> Select one .. </option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="C#">C#</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+            </select>
+        </p>
+        <p>
+            <label for="musics">Favourite Music:</label>
+            <select  name="musics" id="musics">
+                <option value="none"> Select one .. </option>   
+                <optgroup label="Rock">
+                    <option value="Heavy Metal">Heavy Metal</option>
+                    <option value="Hard Rock">Hard Rock</option>
+                    <option value="Blues Rock">Blues Rock</option>
+                </optgroup>
+                <optgroup label="POP">
+                    <option value="Hip pop">Hip pop</option>
+                    <option value="Country pop">Country pop</option>
+                    <option value="Jazz pop">Jazz pop</option>
+                </optgroup>
+            </select>
+        </p>
+   
+        <p>
+            <button type="submit" name="surverySubmitButton" id="surverySubmitButton">Submit</button>
+        </p>
+        </form>
+</body>
+</html>

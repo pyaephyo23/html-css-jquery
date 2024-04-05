@@ -1,0 +1,510 @@
+
+
+.sec-category-banner li{
+  float:left;
+}
+.sec-category-banner {
+  position: relative;
+}
+.category-banner-slider {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.category-banner-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sec-category-banner .l-inner{
+  width: 90%;
+  position: absolute; 
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0px;
+  right: 0px;
+
+}
+.category-banner-content {
+  width: 50%;
+  color: #2E2E22;
+  padding-left:60px;
+}
+.category-banner-content h2{
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 12px 0 20px;
+}
+.category-banner-content p{
+  font-size: 16px;
+  line-height: 1.5;
+}
+/*Category Top Banner Section*/
+
+.sec-category-link{
+  padding: 50px 0;
+}
+.categ-nav{
+  display: inline-block;
+  position: relative;
+  left: 52%;
+  transform: translateX(-50%);
+}
+.categ-nav li{
+  text-align: center;
+  float: left;
+}
+.categ-nav a{
+  display: inline-block;
+  color: #2E2E22;
+  background-color: transparent;  
+  border: 1px solid #354E57;
+  padding: 17px 50px;  
+  border-radius: 30px;
+  font-size: 18px;
+}
+.categ-nav a[href='#treatment']{
+  padding: 17px 40px;
+  margin: 0 80px;
+}
+.categ-nav a:hover,
+.categ-nav a.categ-nav-active{
+  color: #FFFFFF;
+  background-color: #D1B0A8;
+  border: 1px solid #D1B0A8;
+  transition: all 1s;
+}
+.categ-link-wrapper{
+  margin-top: 40px;
+}
+.categ-link-wrapper aside{
+  float: left;
+  width: 21.5%;
+  padding-top: 20px;
+}
+.categ-product-link{
+  color: #2E2E22;
+  margin-bottom: 95px;
+}
+.categ-product-link h3{
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 33px;
+}
+.categ-product-link li{
+  display: block;
+  float: none;
+  font-size: 14px;
+  margin-bottom: 33px;
+  position: relative;
+  padding-left: 27px;
+}
+.categ-product-link li::before{
+  content: "";
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  vertical-align: middle;
+  background-color: #2E2E22;
+  border-radius: 50%;
+}
+.categ-product-lists{
+  float: left;
+  width: 78%;
+}
+.categ-product-item{
+  border-bottom: 1px solid #707070;
+  margin-bottom: 50px;
+}
+.categ-row {
+  margin-bottom: 62px;
+}
+.categ-row:last-child{
+  margin-bottom: 50px;
+}
+.categ-row .card{
+  width: 31.5%;
+  float: left;
+  margin-right:24px;
+}
+.categ-row .card:last-child{
+  margin-right: 0px;
+}
+#treatment .categ-row .card:nth-child(3n){
+  margin-right: 0px;
+  margin-bottom: 62px;
+}
+#treatment .categ-row .card:last-child{
+  margin-bottom: 0px;
+}
+.categ-row .categ-mb-4{
+  margin-bottom: 40px;
+  margin-right: 0px;
+}
+.categ-row .card-big-col{
+  width: 65.5%;
+}
+.categ-new{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 12px;
+  color: #2E2E22;
+  background-color: #F7F7F7;
+  padding: 7px 11px;
+}
+.categ-row .card-img{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.categ-row .card-img img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.categ-row .card-txt{
+  color: #2E2E22;
+  margin: 16px 0px 13px;
+}
+.categ-row .card-txt h5{
+  font-size: 14px;
+  font-weight: 700;
+}
+.categ-row .card-txt p{
+  font-size: 12px;
+  padding: 6px 0px 10px;
+}
+.categ-row .card-txt .categ-price{
+  font-size: 12px;
+  font-weight: 500;
+}
+.categ-row .card-btn{
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid #354E57;  
+  padding: 10px 0;
+  text-align: center;
+  transition: all 1s;
+}
+.categ-row .card-btn a{
+  display: inline-block;
+  color: #2E2E22;
+  position: relative;
+  padding-left: 35px;
+}
+.categ-row .card-btn a::before{
+  content: "";
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  position: absolute;
+  left: 5px;
+  background: url("../img/category/add_cart.png") no-repeat center/cover;
+}
+.categ-row .card:hover .card-btn{
+  background-color: #354E57;
+}
+.categ-row .card:hover .card-btn a{
+  color: #FFFFFF;
+}
+.categ-row .card:hover .card-btn a::before{
+  background: url("../img/category/add_cart_white.png") no-repeat center/cover;
+}
+/*Category Anchor Product Link Section*/
+
+.sec-category-suncream{
+  padding: 50px 0px 100px;
+}
+.sec-category-suncream h2{
+  font-size: 48px;
+  font-weight: 700;  
+  color: #354E57;
+  text-align: center;
+}
+.sec-category-suncream span{
+  display: block;
+  font-size: 16px;
+  margin-top: 15px;
+}
+.suncream-product-item{
+  padding-top: 50px;
+  width: 93%;
+  margin: 0 auto;
+  border: none;
+}
+.suncream-product-item .categ-row .card{
+  width: 23.3%;
+}
+.suncream-product-item .categ-row .card:nth-child(4n){
+  margin-right: 0px;
+  margin-bottom: 60px;
+}
+.suncream-product-item .categ-row .card:last-child{
+  margin-bottom: 0px;
+}
+.suncream-product-item .card-img{
+  border: 3px solid transparent;
+}
+
+.suncream-product-item .card:hover .card-img{
+  border: 3px solid #354E57;
+  transition: all 1s;
+}
+.suncream-product-item .suncream_readmore{
+  text-decoration: underline;
+  color: #2E2E22;
+  font-size: 14px;
+  font-weight: 700;
+}
+/*Category Suncream Product Section*/
+.categ-ipad-block,
+.categ-sp-block{
+  display: none;
+}
+.categ-pc-block{
+  display: block;
+}
+.categ-ipad-none{
+  display: block;
+}
+
+/************** Responsive Ipad**********************
+**********************************************
+***********************************************/
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+  .categ-pc-block,
+  .categ-sp-block{
+    display: none;
+  }
+  .categ-ipad-block{
+    display: block;
+  }
+  .categ-ipad-none{
+    display: none;
+  }
+  .container{
+    max-width: 100%;
+    width: 90%;
+  }
+  .sec-category-banner .container {
+    width: 90%;
+    position: absolute;
+    top: 35%;
+  }
+  .category-banner-content {
+    width: 70%;
+    padding-left: 64px;
+  }
+  .categ-link-wrapper aside::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .categ-link-wrapper aside{
+    width: 80%;
+    float: none;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .categ-product-link {
+    float: left;
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  .categ-product-lists {
+    float: none;
+    width: 90%;
+    margin: 0 auto
+  }
+  .categ-product-item {
+    margin-bottom: 40px;
+  }
+  .categ-row:last-child,
+  .categ-row {
+    margin-bottom: 0px;
+  }
+  .categ-row .card{
+    margin-bottom: 40px !important;
+    margin-right: 40px !important;
+    width: 46.5%;
+  }
+  .categ-row .card:last-child{
+    margin-right: 0px !important;
+  }
+  .categ-row .card-big-col {
+    width: 100%;
+    margin-right: 0px;
+  }
+  #treatment .categ-row .card:nth-child(2n){
+    margin-right: 0px !important;
+  }
+  .suncream-product-item {
+    padding-top: 50px;
+    width: 100%;
+  }
+  .suncream-product-item .categ-row{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .suncream-product-item .categ-row .card {
+    width: 47%;
+    margin-right: 30px !important;
+  }
+  .suncream-product-item .card:nth-child(2n){
+    margin-right: 0px !important;
+  }
+ 
+  /*End Category Section for Ipad*/
+}
+
+/************** Responsive SP**********************
+**********************************************
+***********************************************/   
+@media screen and (max-width:767.9px) {
+  .categ-pc-block,
+  .categ-ipad-block{
+    display: none;
+  }
+  .categ-sp-block{
+    display: block;
+  }
+  .container{
+    max-width: 100%;
+    width: 90%;
+  }
+  .sec-category-banner .container {
+    top: 35%;
+  }
+  .category-banner-content {
+    width: 90%;
+    padding-left: 64px;
+  }
+  .categ-nav a {
+    padding: 17px 42px;
+    border-radius: 30px;
+    font-size: 18px;
+  }
+  .categ-nav a[href='#treatment']{
+    padding: 17px 40px;
+    margin: 0 60px;
+  }
+  .categ-link-wrapper aside::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .categ-link-wrapper aside{
+    width: 80%;
+    float: none;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .categ-product-link {
+    float: left;
+    width: 50%;
+    margin-bottom: 40px;
+  }
+
+  .categ-product-lists {
+    float: none;
+    width: 93%;
+    margin: 0 auto;
+  }
+  .categ-product-item {
+    margin-bottom: 40px;
+  }
+  .categ-row:last-child,
+  .categ-row {
+    margin-bottom: 0px;
+  }
+  .mr-sp-0 {
+    margin-right: 0px !important;
+  }
+  .categ-row .card{
+    margin-bottom: 40px;
+    margin-right: 20px;
+    width: 48%;
+  }
+  .categ-row .card:last-child{
+    margin-right: 0px;
+  }
+  .categ-row .card-big-col {
+    width: 100%;
+    margin-right: 0px;
+  }
+  #treatment .categ-row .card:nth-child(3n) {
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+  #treatment .categ-row .card:nth-child(2n){
+    margin-right: 0px;
+  }
+  .sec-category-suncream h2 {
+    font-size: 48px;
+  }
+  .sec-category-suncream span {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .suncream-product-item {
+    padding-top: 50px;
+    width: 100%;
+  }
+  .suncream-product-item .categ-row{
+    width: 45%;
+    margin: 0 auto;
+  }
+  .suncream-product-item .categ-row .card {
+    width: 100%;
+    margin-right:0px !important;
+  }
+ 
+  .categ-row .card-txt {
+    text-align: center;
+  }
+  .categ-row .card-txt h5 {
+    font-size: 14px;
+  }
+  .categ-row .card-txt p {
+    font-size: 12px;
+    padding: 8px 0px 10px;
+  }
+  .suncream-product-item .suncream_readmore {
+    font-size: 14px;
+  }
+  .categ-row .card-btn {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+  .categ-product-link h3 {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .categ-product-link li {
+    font-size: 14px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+  }
+  .category-banner-content h2 {
+    font-size: 48px;
+  }
+  .category-banner-content p {
+    font-size: 16px;
+    padding-top: 20px;
+  }
+  /*End Category Section for Mobile*/
+}

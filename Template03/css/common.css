@@ -1,0 +1,504 @@
+@charset "utf-8";
+
+/*header*/
+
+.cmn-header {
+  padding: 17px 0;
+  background-color: #F6F8F9;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.cmn-header .header-logo {
+  float: left;
+}
+
+.cmn-header .gnav {
+  float: right;
+}
+
+.cmn-header .gnav li {
+  float: left;
+  margin-left: 39px;
+  font-size: 14px;
+}
+
+.cmn-header .gnav a {
+  color: #343638;
+  opacity: 0.5;
+}
+
+.cmn-header .gnav .active,
+.cmn-header .gnav a:hover {
+  transition: 0.5s;
+  opacity: 1;
+}
+
+
+/*cmn-title*/
+.cmn-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.mv-sec .cmn-title {
+  padding-bottom: 36px;
+  border-bottom: 2px solid #ffffff;
+}
+
+.news-mv .cmn-title {
+  padding-bottom: 36px;
+  border-bottom: 2px solid #EBEDED;
+}
+
+
+/*cmn-btn*/
+.cmn-btn {
+  padding: 13px 30px;
+  border: 1px solid transparent;
+  background-color: #FA6980;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+.cmn-btn:hover {
+  border: 1px solid #FA6980;
+  background-color: #ffffff;
+  color: #FA6980;
+  transition: 0.5s;
+}
+
+
+
+
+.cmn-time {
+  position: relative;
+  padding: 2px 0 0 26px;
+  color: #A6ADB4;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.cmn-time::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: url("/img/common/ico_time.png") no-repeat center/contain;
+  content: "";
+}
+
+
+
+/*footer*/
+
+.footer {
+  padding: 56px 0 60px;
+  background-color: #A6ADB4;
+
+}
+
+.footer-left {
+  float: left;
+}
+
+.footer-right {
+  float: right;
+}
+
+.logo-blk {
+  float: left;
+  margin-right: 38px;
+}
+
+.footer-nav-blk {
+  float: left;
+}
+
+.footer-nav {
+  float: left;
+  margin-right: 40px;
+}
+
+.footer-nav:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li {
+  margin-bottom: 3px;
+}
+
+.footer-nav li:last-child {
+  margin-bottom: 0;
+}
+
+.footer-nav a {
+  line-height: 20px;
+  color: #CBD0D3;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.form-blk {
+  float: left;
+  margin-right: 112px;
+}
+
+.form-blk .input-form {
+  width: 263px;
+  margin-top: 5px;
+  padding: 10px 18px;
+  border: 2px solid #CBD0D3;
+  background: transparent url("/img/common/ico_button.png") no-repeat center right 16px;
+  background-color: #A6ADB4;
+  color: #CBD0D3;
+  font-family: "Helvetica", sans-serif;
+  outline: none;
+  border-radius: 6px;
+}
+
+.form-blk .input-form::placeholder {
+  color: #CBD0D3;
+}
+
+.form-blk p {
+  margin-top: 17px;
+  color: #CBD0D3;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.social-blk {
+  float: right;
+}
+
+.social-blk a {
+  margin-left: 27px;
+}
+
+
+/* ipad */
+
+@media screen and (min-width: 768px) and (max-width: 1160px) {
+
+  /*header*/
+
+  .cmn-header {
+    padding: 2.344vw 0;
+    font-size: 1.823vw;
+  }
+
+  .cmn-header .gnav li {
+    margin-left: 5.078vw;
+    font-size: 1.823vw;
+  }
+
+
+  /*cmn-title*/
+  .cmn-title {
+    font-size: 3.125vw;
+  }
+
+  .mv-sec .cmn-title {
+    padding-bottom: 3.906vw;
+    border-bottom: 0.26vw solid #ffffff;
+  }
+
+
+  /*cmn-btn*/
+  .cmn-btn {
+    padding: 1.693vw 3.906vw;
+    border: 0.13vw solid transparent;
+    font-size: 1.432vw;
+    border-radius: 0.781vw;
+  }
+
+  .cmn-btn:hover {
+    border: 0.13vw solid #FA6980;
+  }
+
+
+  /*cmn-time*/
+  .cmn-time {
+
+    padding: 0.26vw 0 0 3.385vw;
+    font-size: 1.693vw;
+  }
+
+  .cmn-time::before {
+    width: 2.083vw;
+    height: 2.083vw;
+  }
+
+
+
+  /*footer*/
+  .footer {
+    padding: 7.292vw 0;
+
+  }
+
+  .footer-left {
+    float: none;
+    margin-bottom: 5.99vw;
+  }
+
+  .footer-right {
+    float: none;
+  }
+
+  .logo-blk {
+    float: left;
+    margin-right: 0;
+  }
+
+  .footer-nav-blk {
+    float: right;
+  }
+
+  .footer-nav {
+    float: left;
+    margin-right: 5.208vw;
+  }
+
+  .footer-nav li {
+    margin-bottom: 0.391vw;
+  }
+
+
+  .footer-nav a {
+    line-height: 2.604vw;
+    font-size: 1.693vw;
+  }
+
+  .form-blk {
+    float: left;
+    margin-right: 14.583vw;
+  }
+
+  .form-blk .input-form {
+    width: 36.849vw;
+    margin-top: 0;
+    padding: 1.302vw 2.344vw;
+    border: 0.26vw solid #CBD0D3;
+    background: transparent url("/img/common/ico_button.png") no-repeat center right 2.083vw;
+    border-radius: 0.781vw;
+  }
+
+
+  .form-blk p {
+    margin-top: 2.214vw;
+    font-size: 1.432vw;
+  }
+
+  .social-blk {
+    float: right;
+  }
+
+  .social-blk a {
+    margin-left: 2.604vw;
+  }
+
+
+}
+
+
+@media screen and (max-width:767.9px) {
+
+  /*header*/
+
+  .cmn-header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding: 2.813vw 0;
+    font-size: 2.188vw;
+  }
+
+
+  .cmn-header .gnav {
+    position: fixed;
+    top: -150%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 7.813vw;
+    padding: 7.813vw;
+    background-color: #F6F8F9;
+    transition: all .5s ease;
+    opacity: 1;
+
+  }
+
+  .cmn-header .gnav li {
+    float: none;
+    width: 100%;
+    margin-bottom: 9.375vw;
+    margin-left: 0;
+    font-size: 2.5vw;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .cmn-header .gnav a {
+    color: #343638;
+    opacity: 0.5;
+  }
+
+  .cmn-header .gnav .active,
+  .cmn-header .gnav a:hover {
+    transition: 0.5s;
+    opacity: 1;
+  }
+
+  .menu-toggle {
+    position: fixed;
+    top: 3.75vw;
+    right: 7.188vw;
+    cursor: pointer;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+  }
+
+  .menu-toggle span {
+    position: absolute;
+    left: 0;
+    width: 2.5vw;
+    height: 0.313vw;
+    background-color: #343638;
+    border-radius: 0.625vw;
+  }
+
+  .bar1 {
+    transform: translateY(-0.938vw);
+  }
+
+  .bar3 {
+    transform: translateY(0.938vw);
+  }
+
+  .open .bar1 {
+
+    transform: translateY(0vw) rotate(225deg);
+
+  }
+
+  .open .bar2 {
+    opacity: 0;
+  }
+
+  .open .bar3 {
+    transform: translateY(0vw) rotate(-225deg);
+  }
+
+  /*cmn-title*/
+  .cmn-title {
+    font-size: 3.75vw;
+  }
+
+  .mv-sec .cmn-title {
+    padding-bottom: 4.687vw;
+    border-bottom: 0.312vw solid #ffffff;
+  }
+
+
+  /*cmn-btn*/
+  .cmn-btn {
+    padding: 2.344vw 5.938vw;
+    border: 0.156vw solid transparent;
+    font-size: 1.718vw;
+    border-radius: 0.937vw;
+  }
+
+  .cmn-btn:hover {
+    border: 0.156vw solid #FA6980;
+  }
+
+
+  /*cmn-time*/
+  .cmn-time {
+
+    padding: 0.312vw 0 0 4.062vw;
+    font-size: 2.032vw;
+  }
+
+  .cmn-time::before {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+
+
+
+  /*footer*/
+  .footer {
+    padding: 8.75vw 0;
+
+  }
+
+  .footer-left {
+    float: none;
+    margin-bottom: 7.656vw;
+  }
+
+  .footer-right {
+    float: none;
+  }
+
+  .logo-blk {
+    float: left;
+    margin-right: 0;
+  }
+
+  .footer-nav-blk {
+    float: right;
+  }
+
+  .footer-nav {
+    float: left;
+    margin-right: 6.25vw;
+  }
+
+  .footer-nav li {
+    margin-bottom: 0.469vw;
+  }
+
+
+  .footer-nav a {
+    line-height: 3.125vw;
+    font-size: 2.032vw;
+  }
+
+  .form-blk {
+    float: left;
+    margin-right: 0vw;
+  }
+
+  .form-blk .input-form {
+    width: 44.063vw;
+    margin-top: 0;
+    padding: 1.562vw 2.813vw;
+    border: 0.312vw solid #CBD0D3;
+    background: transparent url("/img/common/ico_button.png") no-repeat center right 2.5vw;
+    border-radius: 0.937vw;
+  }
+
+
+  .form-blk p {
+    margin-top: 2.657vw;
+    font-size: 1.718vw;
+  }
+
+  .social-blk {
+    float: right;
+    margin-right: 7.813vw;
+  }
+
+  .social-blk a {
+    margin-left: 3.125vw;
+  }
+
+
+}

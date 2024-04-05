@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>jQuery heightLine.js: Equal Height Plugin Examples</title>
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="../jquery.heightLine.js"></script>
+	<script>
+$(function(){
+
+	$(".box0>div").heightLine();
+
+	$(".destroy").click(function(){
+		$(".box0>div").heightLine("destroy");
+	});
+	$(".changeContent").click(function(){
+		$(".box0>div").text(function(){
+			return $(this).text()+$(this).text();
+		})
+	});
+	//refresh
+	$(".refresh").click(function(){
+		$(".box0>div").heightLine("refresh");
+	})
+
+	//maxWidth:640
+	$(".box1>div").heightLine({
+		maxWidth:640
+	});
+	//minWidth:640
+	$(".box2>div").heightLine({
+		minWidth:640
+	});
+	//maxWidth:500 / minWidth:700
+	$(".box3>div").heightLine({
+		maxWidth:700,
+		minWidth:500
+	});
+
+	//fontSizeCheck
+	$(".box4>div").heightLine({
+		fontSizeCheck:true
+	});
+
+	$(window).resize(function(){
+		$(".width").text("Screen Size: "+$(window).width());
+	}).resize();
+
+});
+	</script>
+	<style>
+		html,* {
+			margin: 0;
+			padding: 0;
+			box-sizing: content-box;
+		}
+		body { background-color: #fafafa; }
+.box div{
+	width:19%;
+	float:left;
+	margin:1%;
+	margin-bottom: 10px;
+	padding: 1%;
+	background-color: #222;
+	color: #fff;
+}
+.clear{
+	clear: both;
+}
+.width{
+	background: red;
+	color: white;
+	position:fixed;
+	right:0;
+	top:0;
+}
+h1 { text-align: center;}
+	</style>
+
+</head>
+<body>
+<h1>jQuery heightLine.js: Equal Height Plugin Examples</h1>
+<div id="carbon-block" style="margin:30px auto" align="center"></div>
+<div style="margin:30px auto" align="center"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+	<div class="clear box box0">
+		<h4>Default:</h4>
+		<div>Maecenas aliquam.</div>
+		<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada felis ut gravida consequat. Quisque id gravida lectus. Integer vehicula pellentesque odio volutpat feugiat. Pellentesque purus diam, tincidunt id diam et, dictum lacinia odio. Nulla sollicitudin nec quam auctor venenatis. </div>
+		<div>Duis cursus sapien eu velit congue imperdiet. </div>
+		<div>Morbi elementum, ante ac tincidunt convallis, mi tellus mattis mi, nec dapibus enim augue vel urna. Donec sit amet nisi eros. Sed quam velit, tincidunt id ullamcorper sagittis.</div>
+
+	</div>
+	<div class="clear">
+		<button class="destroy">destroy</button>
+	</div>
+	<div class="clear">
+		<button class="changeContent">Change Content</button>
+		<button class="refresh">Refresh</button>
+	</div>
+	<div class="clear box box1">
+		<h4>maxWidth:640</h4>
+		<div>Maecenas aliquam.</div>
+		<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada felis ut gravida consequat. Quisque id gravida lectus. Integer vehicula pellentesque odio volutpat feugiat. Pellentesque purus diam, tincidunt id diam et, dictum lacinia odio. Nulla sollicitudin nec quam auctor venenatis. </div>
+		<div>Duis cursus sapien eu velit congue imperdiet. </div>
+		<div>Morbi elementum, ante ac tincidunt convallis, mi tellus mattis mi, nec dapibus enim augue vel urna. Donec sit amet nisi eros. Sed quam velit, tincidunt id ullamcorper sagittis.</div>
+
+	</div>
+
+	<div class="clear box box2">
+		<hr>
+		<h4>minWidth:640</h4>
+		<div>Maecenas aliquam.</div>
+		<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada felis ut gravida consequat. Quisque id gravida lectus. Integer vehicula pellentesque odio volutpat feugiat. Pellentesque purus diam, tincidunt id diam et, dictum lacinia odio. Nulla sollicitudin nec quam auctor venenatis. </div>
+		<div>Duis cursus sapien eu velit congue imperdiet. </div>
+		<div>Morbi elementum, ante ac tincidunt convallis, mi tellus mattis mi, nec dapibus enim augue vel urna. Donec sit amet nisi eros. Sed quam velit, tincidunt id ullamcorper sagittis.</div>
+	</div>
+
+	<div class="clear box box3">
+		<hr>
+		<h4>maxWidth:500 / minWidth:700</h4>
+		<div>Maecenas aliquam.</div>
+		<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada felis ut gravida consequat. Quisque id gravida lectus. Integer vehicula pellentesque odio volutpat feugiat. Pellentesque purus diam, tincidunt id diam et, dictum lacinia odio. Nulla sollicitudin nec quam auctor venenatis. </div>
+		<div>Duis cursus sapien eu velit congue imperdiet. </div>
+		<div>Morbi elementum, ante ac tincidunt convallis, mi tellus mattis mi, nec dapibus enim augue vel urna. Donec sit amet nisi eros. Sed quam velit, tincidunt id ullamcorper sagittis.</div>
+	</div>
+	<div class="clear box box4">
+		<hr>
+		<h4>fontSizeCheck</h4>
+		<div>Maecenas aliquam.</div>
+		<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada felis ut gravida consequat. Quisque id gravida lectus. Integer vehicula pellentesque odio volutpat feugiat. Pellentesque purus diam, tincidunt id diam et, dictum lacinia odio. Nulla sollicitudin nec quam auctor venenatis. </div>
+		<div>Duis cursus sapien eu velit congue imperdiet. </div>
+		<div>Morbi elementum, ante ac tincidunt convallis, mi tellus mattis mi, nec dapibus enim augue vel urna. Donec sit amet nisi eros. Sed quam velit, tincidunt id ullamcorper sagittis.</div>
+	</div>
+	<div class="width"></div>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+</body>
+</html>
